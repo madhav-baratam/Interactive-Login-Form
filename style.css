@@ -21,7 +21,7 @@ body{
     font-weight: 700;
 
 }
-.b{
+.boxStyle{
     border: 0;
     background:none ;
     display:block ;
@@ -36,8 +36,23 @@ body{
     transition: 0.25px;
 
 }
+#password
+{
+  border: 0;
+    background:none ;
+    display:block ;
+    margin: 20px auto;
+    border: 3px solid rgb(255, 0, 191);
+    text-align: center;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: rgb(23, 22, 22);
+    border-radius: 24px;
+    transition: 0.25px;
+}
 
-.b:focus {
+.boxStyle:focus {
     width: 270px;
     border: #ffc400ec;
    
@@ -61,6 +76,47 @@ body{
 
 .box input[type="submit"]:hover {
     background: #ffc400ec;
-
-
 }
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+ 
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  #message1{
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    font-size: 15px;
+    display: none;
+  }
