@@ -5,7 +5,8 @@ body{
     background: url(background.jpg);
     background-size: cover;
 }
-.box{
+
+/* .box{
     width:300px;
     padding: 30px;
     position: absolute;
@@ -14,7 +15,44 @@ body{
     transform: translate(-50%,-50%);
     background: rgba(0,0, 0,0.4);
     text-align: center;
+} */
+.flexbox-container
+{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.flexbox-item-1
+{
+   /* width: 300px;  */
+  padding: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-65%);
+  background: rgba(0,0, 0,0.4);
+  text-align: center;
+  align-self: center;
+}
+
+.flexbox-item-2
+{
+    display:none;
+    padding: 10px;
+    background: rgba(0,0, 0,0.4);
+    color: #000;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+
+
 .box h1{
     color: white;
     text-transform: uppercase;
@@ -36,6 +74,12 @@ body{
     transition: 0.25px;
 
 }
+.boxStyle:focus 
+{
+  width: 270px;
+  border: #ffc400ec;
+ 
+}
 #password
 {
   border: 0;
@@ -52,11 +96,7 @@ body{
     transition: 0.25px;
 }
 
-.boxStyle:focus {
-    width: 270px;
-    border: #ffc400ec;
-   
-}
+
 .box input[type="submit"]
 {
     border: 0;
@@ -78,7 +118,7 @@ body{
     background: #ffc400ec;
 }
 
-#message {
+/* #message {
     display:none;
     background: #f1f1f1;
     color: #000;
@@ -86,7 +126,7 @@ body{
     padding: 20px;
     margin-top: 10px;
   }
-  
+   */
   #message p {
     padding: 10px 35px;
     font-size: 18px;
@@ -113,10 +153,4 @@ body{
     left: -35px;
     content: "✖";
   }
-  #message1{
-    position: absolute;
-    bottom: -30px;
-    color: #fff;
-    font-size: 15px;
-    display: none;
-  }
+ 
